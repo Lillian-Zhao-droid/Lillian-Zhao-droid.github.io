@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lillian Zhao</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: white; color: #111; font: 14px/1.45 Lato, Arial, sans-serif; }
+    main { max-width: 800px; margin: auto; padding: 0 20px 36px; }
+    header { padding: 16px 0 32px; }
+    header img { display: block; width: 32%; max-width: 250px; margin: 0 auto 22px; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 50%; background: #f2f4f6; }
+    h1 { margin: 0 0 14px; font-size: 32px; font-weight: 400; }
+    header h1, .links { text-align: center; }
+    header p { margin: 14px 0; }
+    .links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0 7px; }
+    h2 { margin: 0 0 8px; font-size: 22px; font-weight: 400; }
+    section + section { margin-top: 18px; }
+    h3 { margin: 0; font-size: 14px; }
+    a { color: #1772b4; text-decoration: none; }
+    a:hover, a:focus-visible { color: #b6570a; text-decoration: underline; }
+    article { display: grid; grid-template-columns: 160px minmax(0, 1fr); align-items: center; gap: 30px; padding: 14px 0; }
+    article p { margin: 9px 0 0; }
+    .preview { display: grid; align-content: center; gap: 6px; aspect-ratio: 4/3; padding: 14px; background: var(--paper); color: var(--ink); font: 11px/1.3 ui-monospace, monospace; }
+    .preview span { display: block; padding: 3px 5px; border-left: 2px solid currentColor; background: #ffffffb0; }
+    .blue { --paper: #e8f1f9; --ink: #214c70; }
+    .green { --paper: #eaf3eb; --ink: #315c44; }
+    .tan { --paper: #f7efe2; --ink: #704b28; }
+    .violet { --paper: #f0edf7; --ink: #563f75; }
+    @media (max-width: 520px) {
+      h1 { font-size: 27px; }
+      article { grid-template-columns: 95px minmax(0, 1fr); gap: 14px; }
+      .preview { padding: 7px; font-size: 9px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <img src="portrait-cartoon.png" alt="Illustrated portrait of Lillian Zhao" width="250" height="250">
+      <div>
+        <h1>Lillian Zhao</h1>
+        <p>I'm interested in how data analysis and AI can support auditing and help us understand <a href="https://github.com/Lillian-Zhao-droid/between-the-lines">what companies communicate to investors</a>. I've built tools that <a href="https://github.com/Lillian-Zhao-droid/hw2_Workflow">turn audit notes into formal findings</a> and <a href="https://github.com/Lillian-Zhao-droid/evidence-grounded-ma-risk-screener">flag claims in merger and acquisition disclosures</a> for closer review. I've also studied <a href="https://github.com/Lillian-Zhao-droid/MA-Impact-Analysis">the relationship between acquisition goodwill and firm value</a>.</p>
+        <nav class="links" aria-label="Profile links">
+          <a href="#coursework">Text Mining</a><span aria-hidden="true">/</span>
+          <a href="#github-projects">Projects</a><span aria-hidden="true">/</span>
+          <a href="https://github.com/Lillian-Zhao-droid">GitHub</a>
+        </nav>
+      </div>
+    </header>
+    <section aria-labelledby="coursework">
+      <h2 id="coursework">Text Mining Projects</h2>
+      <article>
+        <div class="preview blue" aria-hidden="true"><span>Web transcripts</span><span>Text analysis</span></div>
+        <div>
+          <h3>Earnings Call Transcript Analysis</h3>
+          <p>I collected earnings call transcripts from The Motley Fool and organized them into two tables, one for full calls and one for individual speaker turns. Each turn was labeled as part of the prepared remarks or the Q&amp;A.</p>
+          <p>The next stage, <a href="https://github.com/Lillian-Zhao-droid/between-the-lines">Between the Lines</a>, uses a Naive Bayes model to classify new sentences as prepared remarks or Q&amp;A responses. The Q&amp;A class uses answers only.</p>
+        </div>
+      </article>
+    </section>
+    <section aria-labelledby="github-projects">
+      <h2 id="github-projects">GitHub Projects</h2>
+      <article>
+        <div class="preview violet" aria-hidden="true"><span>Prepared remarks</span><span>Q&amp;A responses</span></div>
+        <div>
+          <h3><a href="https://github.com/Lillian-Zhao-droid/between-the-lines">Between the Lines</a></h3>
+          <p>A Naive Bayes classifier that distinguishes prepared remarks from Q&amp;A responses in earnings call transcripts.</p>
+        </div>
+      </article>
+      <article>
+        <div class="preview tan" aria-hidden="true"><span>M&amp;A disclosure</span><span>Evidence review</span></div>
+        <div>
+          <h3><a href="https://github.com/Lillian-Zhao-droid/evidence-grounded-ma-risk-screener">Evidence-Grounded M&amp;A Disclosure Risk Screener</a></h3>
+          <p>A Streamlit app that retrieves evidence and flags M&amp;A disclosure paragraphs for further review.</p>
+        </div>
+      </article>
+      <article>
+        <div class="preview green" aria-hidden="true"><span>M&amp;A goodwill</span><span>Firm value</span></div>
+        <div>
+          <h3><a href="https://github.com/Lillian-Zhao-droid/MA-Impact-Analysis">M&amp;A Impact Analysis</a></h3>
+          <p>Stata code for a thesis on M&amp;A goodwill and firm value.</p>
+        </div>
+      </article>
+      <article>
+        <div class="preview blue" aria-hidden="true"><span>PDF</span><span>Study session</span></div>
+        <div>
+          <h3><a href="https://github.com/Lillian-Zhao-droid/ScholarOS">ScholarOS</a></h3>
+          <p>A study app that turns PDFs into learning activities, gives feedback, and exports study sessions.</p>
+        </div>
+      </article>
+      <article>
+        <div class="preview violet" aria-hidden="true"><span>AI draft</span><span>Edited version</span></div>
+        <div>
+          <h3><a href="https://github.com/Lillian-Zhao-droid/GAI-HW1-jzhao">Coding Assistant Onboarding</a></h3>
+          <p>A Generative AI assignment documenting AI-assisted drafting, manual revision, and version history.</p>
+        </div>
+      </article>
+      <article>
+        <div class="preview tan" aria-hidden="true"><span>Audit notes</span><span>Issue description</span></div>
+        <div>
+          <h3><a href="https://github.com/Lillian-Zhao-droid/hw2_Workflow">GenAI Workflow for Audit Notes</a></h3>
+          <p>A workflow that turns rough audit notes into formal audit issue descriptions.</p>
+        </div>
+      </article>
+      <article>
+        <div class="preview green" aria-hidden="true"><span>Math question</span><span>Tool calls</span></div>
+        <div>
+          <h3><a href="https://github.com/Lillian-Zhao-droid/bu-330-760-week4">Week 4 Math Agent</a></h3>
+          <p>A ReAct agent that uses tools to answer math questions.</p>
+        </div>
+      </article>
+      <article>
+        <div class="preview blue" aria-hidden="true"><span>Business days</span><span>Time zones</span></div>
+        <div>
+          <h3><a href="https://github.com/Lillian-Zhao-droid/hw5-jiayu">Business Time Converter</a></h3>
+          <p>A reusable skill for business-day calculations, time zone conversions, and recurring schedules.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
